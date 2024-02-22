@@ -5,12 +5,52 @@
 
 /* Define variables in the :root */
  :root {
-   --contrast: lime;
-   --backgr: #000;
+   --contrast: rgba(255, 255, 255, 0.941);
+   --backgr: #000000;
  }
+
+ *{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+ background: transparent;
+}
 
 /* Use your variables on elements */
  main {
    color: var(--contrast);
    background-color: var(--backgr);
+ }
+
+ .title {
+align-items: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+font-size: 50px;
+
+ }
+
+ .titlepara {
+align-items: center;
+ }
+
+ table{
+  border-collapse: collapse;
+  width: 100%;
+  border: solid 1px var(--backgr);
+
+ }
+
+th{
+  border-collapse: collapse;
+  width: 100%;
+  border: solid 1px var(--backgr);
+}
+
+ .boldtext {
+  font-weight: bold;
+  font-size: 20px;
  }
