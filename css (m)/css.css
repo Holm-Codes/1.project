@@ -38,11 +38,6 @@ font-size: 50px;
 align-items: center;
  }
 
- .movie-overview{
-  border: 1px solid var(--table);
-  border-collapse: collapse;
- }
-
  table{
   border: 1px solid var(--table);
   border-collapse: collapse;
