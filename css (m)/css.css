@@ -5,8 +5,9 @@
 
 /* Define variables in the :root */
  :root {
-   --contrast: rgba(255, 255, 255, 0.941);
-   --backgr: #000000;
+   --contrast: white;
+   --backgr: black;
+   --table: #000000;
  }
 
  *{
@@ -37,18 +38,23 @@ font-size: 50px;
 align-items: center;
  }
 
- table{
+ .movie-overview{
+  border: 1px solid var(--table);
   border-collapse: collapse;
-  width: 100%;
-  border: solid 1px var(--backgr);
-
  }
 
-th{
+ table{
+  border: 1px solid var(--table);
   border-collapse: collapse;
-  width: 100%;
-  border: solid 1px var(--backgr);
-}
+  width: auto;
+  font-weight: lighter;
+  color: var(--backgr);
+  text-align: center;
+  background-color: var(--contrast);
+  margin-left: 20px;
+  margin-right: 20px;
+ }
+
 
  .boldtext {
   font-weight: bold;
@@ -56,7 +62,7 @@ th{
  }
 
 
-
- #movie-sugg {
+ .movie-sugg {
   padding-top: 10px;
+  padding-bottom: 50px;
  }
